@@ -1,17 +1,11 @@
 package com.moukiladev.javadb;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class HelloApplication extends Application {
-
 
     @Override
     public void init() throws Exception {
@@ -26,6 +20,7 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
+
 
     public static void main(String[] args) {
         launch();
