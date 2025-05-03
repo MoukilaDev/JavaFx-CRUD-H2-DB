@@ -10,10 +10,10 @@
    <children>
       <Button fx:id="registerButton" layoutX="160.0" layoutY="261.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" prefHeight="30.0" prefWidth="62.0" text="Register" />
       <Label layoutX="191.0" layoutY="138.0" prefHeight="17.0" prefWidth="72.0" text="Designation" textAlignment="CENTER" />
-      <TextField fx:id="designation" layoutX="263.0" layoutY="134.0" prefHeight="25.0" prefWidth="119.0" />
+      <TextField fx:id="designation" layoutX="263.0" layoutY="134.0" prefHeight="25.0" prefWidth="146.0" promptText="Enter the good's name" />
       <Label layoutX="227.0" layoutY="179.0" prefHeight="17.0" prefWidth="38.0" text="Price" textAlignment="CENTER" />
-      <TextField fx:id="price" layoutX="265.0" layoutY="175.0" prefHeight="25.0" prefWidth="119.0" />
+      <TextField fx:id="price" layoutX="265.0" layoutY="175.0" prefHeight="25.0" prefWidth="119.0" promptText="Enter the price" />
       <Button fx:id="resetButton" layoutX="394.0" layoutY="261.0" mnemonicParsing="false" onAction="#onResetButtonClick" prefHeight="30.0" prefWidth="62.0" text="Reset" />
-      <TextArea fx:id="resultTrace" editable="false" layoutX="70.0" layoutY="316.0" prefHeight="58.0" prefWidth="462.0" />
+      <TextArea fx:id="resultTrace" editable="false" layoutX="70.0" layoutY="316.0" prefHeight="58.0" prefWidth="462.0" text="success" />
    </children>
 </AnchorPane>

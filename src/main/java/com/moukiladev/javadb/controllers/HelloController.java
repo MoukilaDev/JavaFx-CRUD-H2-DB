@@ -21,7 +21,7 @@ public class HelloController {
 
 
     @FXML
-    protected void onRegisterButtonClick() throws IOException, SQLException {
+    protected void onRegisterButtonClick() {
 
         String createTable = "CREATE TABLE IF NOT EXISTS GOODS (" +
                                 "ID BIGINT AUTO_INCREMENT PRIMARY KEY," +
@@ -69,7 +69,7 @@ public class HelloController {
     }
 
     @FXML
-    protected void onResetButtonClick() throws IOException{
+    protected void onResetButtonClick() {
         clearInputs();
     }
 
