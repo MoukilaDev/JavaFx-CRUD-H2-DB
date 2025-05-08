@@ -8,7 +8,7 @@ public class Goods {
     public Goods(){};
 
     public Goods(long Id, String Designation, int Price){
-            this.Id = Id;
+        this.Id = Id;
         this.Designation = Designation;
         this.Price = Price;
     }

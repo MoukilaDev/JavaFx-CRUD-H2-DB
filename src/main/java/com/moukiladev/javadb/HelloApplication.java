@@ -5,15 +5,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.net.URL;
+import java.sql.SQLException;
 
 public class HelloApplication extends Application {
     @Override
-    public void init() throws Exception {
+    public void init() throws Exception{
         DbConnection firstConnection = new DbConnection("jdbc:h2:~/src/main/resources/com/moukiladev/Database/stock.db","JavaDB","123456789");
         if(firstConnection.connect().isValid(4)) {
             System.out.println("Connected to the database");
         }
-
     }
 
     @Override
