@@ -173,11 +173,20 @@ public class HelloController implements Initializable {
         if (selectedGood == null ){
             appendResult("No goods selected for update","red");
         }
-        String deleteGoods = "DELETE GOODS WHERE ID=?";
+        String deleteGoods = "DELETE goods WHERE id=?";
         try(Connection conn = getTheConnection(); PreparedStatement pstmt = conn.prepareStatement(deleteGoods)){
             pstmt.setLong(1, selectedGood.getId());
             pstmt.executeUpdate();
-            loadGoodsFromDatabase();
+            int rowsAffected = pstmt.executeUpdate();
+            if (rowsAffected > 0) {
+                appendResult("Deleted: " + selectedGood.getDesignation(), "green");
+            } else {
+                appendResult("Delete failed: no rows affected", "orange");
+            }
+            loadGoodsFromDatabase(); // Refresh the table
+        } catch (SQLException e) {
+            appendResult("Error deleting goods: " + e.getMessage(), "red");
+            e.printStackTrace(); // For development — use a logger in production
         }
     }
     /**
