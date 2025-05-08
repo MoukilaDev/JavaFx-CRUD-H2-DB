@@ -168,12 +168,17 @@ public class HelloController implements Initializable {
     }
 
     @FXML
-    protected void onDeleteButtonClick(){
+    protected void onDeleteButtonClick() throws SQLException{
         Goods selectedGood = tableGoods.getSelectionModel().getSelectedItem();
         if (selectedGood == null ){
             appendResult("No goods selected for update","red");
         }
         String deleteGoods = "DELETE GOODS WHERE ID=?";
+        try(Connection conn = getTheConnection(); PreparedStatement pstmt = conn.prepareStatement(deleteGoods)){
+            pstmt.setLong(1, selectedGood.getId());
+            pstmt.executeUpdate();
+            loadGoodsFromDatabase();
+        }
     }
     /**
      * Retrieves all goods from the database using a given Statement.
