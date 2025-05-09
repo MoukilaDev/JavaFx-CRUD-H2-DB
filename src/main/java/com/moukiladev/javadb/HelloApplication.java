@@ -11,9 +11,8 @@ import java.sql.SQLException;
 public class HelloApplication extends Application {
     @Override
     public void init() throws Exception{
-        DbConnection firstConnection = new DbConnection("jdbc:h2:~/src/main/resources/com/moukiladev/Database/stock.db","JavaDB","123456789");
-        if(firstConnection.connect().isValid(4)) {
-            System.out.println("Connected to the database");
+        if(DbConnection.getConnection().isValid(4)) {
+            System.out.println("Connected successfully to the database");
         }
     }
 

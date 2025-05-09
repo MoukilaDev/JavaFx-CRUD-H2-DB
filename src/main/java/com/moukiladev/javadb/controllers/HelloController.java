@@ -64,7 +64,8 @@ public class HelloController implements Initializable {
     private void loadGoodsFromDatabase() {
         List<Goods> listdbGoods = new ArrayList<>();
 
-        try(Connection conn = getTheConnection()){
+        try{
+            Connection conn = DbConnection.getConnection();
             Statement stmt = conn.createStatement();
             getResultGoods(stmt, listdbGoods);
         } catch (SQLException e) {
@@ -93,7 +94,8 @@ public class HelloController implements Initializable {
 
         String insertGoods = "INSERT INTO GOODS (DESIGNATION, PRICE) VALUES (?, ?)";
 
-        try (Connection conn = getTheConnection(); PreparedStatement pstmt = conn.prepareStatement(insertGoods)) {
+        try {
+            Connection conn = DbConnection.getConnection(); PreparedStatement pstmt = conn.prepareStatement(insertGoods);
             // Create a statement and execute SQL queries
             Statement stmt = conn.createStatement();
             // Create table if not exists
@@ -145,15 +147,15 @@ public class HelloController implements Initializable {
         int newPrice = parseInt(price.getText());
 
         String updateGoods = "UPDATE GOODS SET DESIGNATION = ?, PRICE = ? WHERE ID = ?";
-        try(Connection conn = getTheConnection(); PreparedStatement pstmt = conn.prepareStatement(updateGoods)){
+        try{
+            Connection conn = DbConnection.getConnection(); PreparedStatement pstmt = conn.prepareStatement(updateGoods);
             pstmt.setString(1, newDesignation);
             pstmt.setInt(2, newPrice);
             pstmt.setLong(3, selectedGood.getId());
 
             int rowsAffected = pstmt.executeUpdate();
             if(rowsAffected > 0){
-                appendResult("update successfully", "green");
-                appendResult("Good : "+newDesignation, "green");
+                appendResult("updated : "+newDesignation, "green");
                 loadGoodsFromDatabase();
 
             }else{
@@ -174,13 +176,15 @@ public class HelloController implements Initializable {
             appendResult("No goods selected for update","red");
         }
         String deleteGoods = "DELETE goods WHERE id=?";
-        try(Connection conn = getTheConnection(); PreparedStatement pstmt = conn.prepareStatement(deleteGoods)){
+        try{
+            Connection conn = DbConnection.getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(deleteGoods);
             pstmt.setLong(1, selectedGood.getId());
-            pstmt.executeUpdate();
+
             int rowsAffected = pstmt.executeUpdate();
             if (rowsAffected > 0) {
                 appendResult("Deleted: " + selectedGood.getDesignation(), "green");
-            } else {
+            }else{
                 appendResult("Delete failed: no rows affected", "orange");
             }
             loadGoodsFromDatabase(); // Refresh the table
@@ -219,18 +223,6 @@ public class HelloController implements Initializable {
     @FXML
     protected void onResetButtonClick() {
         clearInputs();
-    }
-
-    /**
-     * Returns a Connection object to the H2 database using custom DbConnection class.
-     */
-    protected Connection getTheConnection() throws SQLException {
-        String url = "jdbc:h2:~/src/main/resources/com/moukiladev/Database/stock.db";
-        String user ="JavaDB";
-        String password = "123456789";
-        DbConnection dbConnection = new DbConnection(url, user, password);
-
-        return dbConnection.connect();
     }
 
     /**
