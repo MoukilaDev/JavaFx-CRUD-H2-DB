@@ -2,21 +2,17 @@ package com.moukiladev.javadb.controllers;
 
 import com.moukiladev.javadb.DbConnection;
 import com.moukiladev.javadb.Goods;
+import javafx.beans.binding.BooleanBinding;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TextField;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
-
-import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
@@ -43,6 +39,10 @@ public class HelloController implements Initializable {
     private TableColumn<Goods, String> columnDesignation;
     @FXML
     private TableColumn<Goods, Integer> columnPrice;
+    @FXML
+    private Button registerButton;
+    @FXML
+    private Button updateButton;
 
     /**
      * Initializes the controller after the root element has been completely processed.
@@ -53,8 +53,11 @@ public class HelloController implements Initializable {
         columnId.setCellValueFactory(new PropertyValueFactory<>("id"));
         columnDesignation.setCellValueFactory(new PropertyValueFactory<>("designation"));
         columnPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
+        BooleanBinding emptyFields = designation.textProperty().isEmpty().or(price.textProperty().isEmpty());
+        //Bind buttons to field content;  buttons are disabled when the input fields are empty
+        registerButton.disableProperty().bind(emptyFields);
+        updateButton.disableProperty().bind(emptyFields);
         loadGoodsFromDatabase();
-        //resultTrace.setStyle("-fx-background-color: white;");
     }
 
     /**
