@@ -58,6 +58,18 @@ public class HelloController implements Initializable {
         registerButton.disableProperty().bind(emptyFields);
         updateButton.disableProperty().bind(emptyFields);
         loadGoodsFromDatabase();
+        //
+        tableGoods.setRowFactory(tv -> {
+            TableRow<Goods> row = new TableRow<>(); //a new TableRow for each item in the table. This allows you to attach mouse events per row.
+            row.setOnMouseClicked(event -> { //Attach a mouse click listener to the row. This listener is triggered every time the user clicks on a row.
+                if (event.getClickCount() == 2 && !row.isEmpty()) {
+                    Goods selected = row.getItem();
+                    designation.setText(selected.getDesignation());
+                    price.setText(String.valueOf(selected.getPrice()));
+                }
+            });
+            return row;
+        });
     }
 
     /**
