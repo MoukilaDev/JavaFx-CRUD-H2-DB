@@ -1,12 +1,9 @@
-package com.moukiladev.javadb;
-import com.moukiladev.javadb.controllers.HelloController;
+package com.moukiladev.Javadb;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
-import java.net.URL;
-import java.sql.SQLException;
 
 public class HelloApplication extends Application {
     @Override

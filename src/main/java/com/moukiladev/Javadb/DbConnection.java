@@ -1,4 +1,4 @@
-package com.moukiladev.javadb;
+package com.moukiladev.Javadb;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

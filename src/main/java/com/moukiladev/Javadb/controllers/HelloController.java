@@ -1,7 +1,6 @@
-package com.moukiladev.javadb.controllers;
-
-import com.moukiladev.javadb.DbConnection;
-import com.moukiladev.javadb.Goods;
+package com.moukiladev.Javadb.controllers;
+import com.moukiladev.Javadb.DbConnection;
+import com.moukiladev.Javadb.Goods;
 import javafx.beans.binding.BooleanBinding;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -18,11 +17,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
-
 import static java.lang.Integer.parseInt;
 
 public class HelloController implements Initializable {
-
     @FXML
     private ScrollPane logScrollPane;
     @FXML
@@ -217,9 +214,7 @@ public class HelloController implements Initializable {
         ResultSet rs = stmt.executeQuery(selectGoods);
 
         while (rs.next()) {
-            System.out.println(rs.getString("ID") + " - " +rs.getString("DESIGNATION") + " - "
-                    + rs.getString("PRICE") + " FCFA");
-
+            //System.out.println(rs.getString("ID") + " - " +rs.getString("DESIGNATION") + " - "+ rs.getString("PRICE") + " FCFA");
             int theId = rs.getInt("ID");
             String theDesignation = rs.getString("DESIGNATION");
             int thePrice = rs.getInt("PRICE");
@@ -227,7 +222,6 @@ public class HelloController implements Initializable {
             Goods theGoods = new Goods(theId, theDesignation, thePrice);
             ResultGoods.add(theGoods);
         }
-        System.out.println(ResultGoods);
         updateTableView(ResultGoods);
     }
 

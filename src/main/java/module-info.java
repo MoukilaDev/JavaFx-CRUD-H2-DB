@@ -1,4 +1,4 @@
-module com.moukiladev.javadb {
+module com.moukiladev.Javadb {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -6,8 +6,8 @@ module com.moukiladev.javadb {
     requires com.dlsc.formsfx;
     requires java.sql;
 
-    opens com.moukiladev.javadb to javafx.fxml;
-    exports com.moukiladev.javadb;
-    exports com.moukiladev.javadb.controllers;
-    opens com.moukiladev.javadb.controllers to javafx.fxml;
+    opens com.moukiladev.Javadb to javafx.fxml;
+    exports com.moukiladev.Javadb;
+    exports com.moukiladev.Javadb.controllers;
+    opens com.moukiladev.Javadb.controllers to javafx.fxml;
 }

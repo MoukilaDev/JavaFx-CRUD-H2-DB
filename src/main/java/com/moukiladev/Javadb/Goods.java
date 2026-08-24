@@ -1,4 +1,4 @@
-package com.moukiladev.javadb;
+package com.moukiladev.Javadb;
 
 public class Goods {
     private long Id;
