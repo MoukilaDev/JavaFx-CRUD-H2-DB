@@ -4,29 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e32b779-ba0e-4e8f-90a1-d6d26a570f19" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="90ac8f74-f3a9-4956-96cd-c548381db5bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moukiladev/javadb/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moukiladev/Javadb/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moukiladev/javadb/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moukiladev/Javadb/Goods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moukiladev/javadb/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moukiladev/Javadb/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/moukiladev/javadb/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/moukiladev/Javadb/controllers/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moukiladev/Javadb/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/moukiladev/DbConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moukiladev/Javadb/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/moukiladev/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moukiladev/Javadb/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/moukiladev/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/moukiladev/Javadb/controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/practice/moukiladev/controllers/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/moukiladev/Javadb/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/moukiladev/fxmlViews/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/moukiladev/Database/stock.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/stock.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/moukiladev/Database/stock.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/stock.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/moukiladev/css/javaDB.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/practice/moukiladev/css/javaDB.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/moukiladev/fxmlViews/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/practice/moukiladev/fxmlviews/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JpbToolWindowState">
-    <option name="isToolWindowVisible" value="false" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/22-ea+11/javafx-graphics-22-ea+11-sources.jar!/com/sun/javafx/application/PlatformImpl.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -35,26 +44,155 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
-  <component name="ProjectId" id="3IMMfWMbAsrAFHFelAdVBaFfgGf" />
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000000000155" />
+      <entry key="S2" value="1.0006275421569675" />
+      <entry key="S5" value="1.052366935814763" />
+      <entry key="S10" value="1.228838425686571" />
+      <entry key="S30" value="1.6211023883253843" />
+      <entry key="S60" value="1.9455457825900981" />
+      <entry key="M2" value="2.721811851823102" />
+      <entry key="M5" value="4.78582820345304" />
+      <entry key="M10" value="6.754486049082367" />
+      <entry key="M15" value="7.8028267475971065" />
+      <entry key="M30" value="9.175189156595053" />
+      <entry key="H1" value="10.021037297282781" />
+      <entry key="H2" value="10.492417542763423" />
+      <entry key="H4" value="10.741485561360726" />
+      <entry key="D1" value="10.956240697367521" />
+      <entry key="W1" value="10.99373194131554" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9395227492140118" />
+      <entry key="MS500" value="0.9876008614455256" />
+      <entry key="S2" value="0.9975112850210595" />
+      <entry key="S5" value="1.0510547532530043" />
+      <entry key="S10" value="1.228072063729876" />
+      <entry key="S30" value="1.6205835479560662" />
+      <entry key="S60" value="1.9439706751282595" />
+      <entry key="M2" value="2.718439419519062" />
+      <entry key="M5" value="4.780770452502506" />
+      <entry key="M10" value="6.749943813997324" />
+      <entry key="M15" value="7.799075262648554" />
+      <entry key="M30" value="9.172842791473318" />
+      <entry key="H1" value="10.019720397754401" />
+      <entry key="H2" value="10.491719295119381" />
+      <entry key="H4" value="10.741125960212603" />
+      <entry key="D1" value="10.956179261629362" />
+      <entry key="W1" value="10.99372312736377" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2lQeUbbqTRMziMCP0K7YRmnqkVE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Projects/Java projects/JavaDB"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.H2DataConnection.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.moukiladev.Javadb.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.practice.moukiladev.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.JavaDB [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.JavaDB [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Java projects/JavaDB&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.122100115&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.49189815&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.28134558&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Java projects\JavaDB" />
+      <recent name="D:\Projects\Java projects\JavaDB\src\main\resources\com\moukiladev\Javadb" />
+      <recent name="D:\Projects\Java projects\JavaDB\src\main\java" />
+      <recent name="D:\Projects\Java projects\JavaDB\src\main\java\com\moukiladev\javadb" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.practice.moukiladev" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="dir /s" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.com.practice.moukiladev.HelloApplication">
+    <configuration name="H2DataConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.moukiladev.javadb.H2DataConnection" />
+      <module name="JavaDB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moukiladev.javadb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.moukiladev.Javadb.HelloApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.moukiladev.javadb.HelloApplication" />
+      <module name="JavaDB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moukiladev.javadb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.practice.moukiladev.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.practice.moukiladev.HelloApplication" />
       <module name="javadb" />
       <extension name="coverage">
         <pattern>
@@ -66,32 +204,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.com.practice.moukiladev.HelloApplication" />
+      <item itemvalue="Application.H2DataConnection" />
+      <item itemvalue="Application.HelloApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.practice.moukiladev.HelloApplication" />
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.H2DataConnection" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0e32b779-ba0e-4e8f-90a1-d6d26a570f19" name="Changes" comment="" />
-      <created>1787570088118</created>
+      <changelist id="90ac8f74-f3a9-4956-96cd-c548381db5bd" name="Changes" comment="" />
+      <created>1725116744449</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1787570088118</updated>
+      <updated>1725116744449</updated>
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.reflect.InvocationTargetException" package="java.lang.reflect" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

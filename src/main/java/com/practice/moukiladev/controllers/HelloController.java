@@ -1,6 +1,6 @@
-package com.moukiladev.Javadb.controllers;
-import com.moukiladev.Javadb.DbConnection;
-import com.moukiladev.Javadb.Goods;
+package com.practice.moukiladev.controllers;
+import com.practice.moukiladev.DbConnection;
+import com.practice.moukiladev.Goods;
 import javafx.beans.binding.BooleanBinding;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

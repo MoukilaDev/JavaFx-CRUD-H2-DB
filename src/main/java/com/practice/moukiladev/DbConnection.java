@@ -1,4 +1,4 @@
-package com.moukiladev.Javadb;
+package com.practice.moukiladev;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DbConnection {
     private static Connection connection = null;
-    private static final String url = "jdbc:h2:~/src/main/resources/com/moukiladev/Database/stock.db";
+    private static final String url = "jdbc:h2:./database/stock";
     private static final String user = "JavaDB";
     private static final String password = "123456789";
 
